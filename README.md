@@ -9,8 +9,10 @@ In case it becomes unavailable, here's a fork: [rars](https://github.com/andrewt
 RARS made into macOS app using ``jpackage`` on original RARS jar distribution:
 
 ```bash
-jpackage --input src --main-jar rars.jar \
-  -n RARS --main-class rars.Launch \
+jpackage --input <folder with rars.jar in it> \
+  --main-jar rars.jar \
+  -n RARS \
+  --main-class rars.Launch \
   --app-version 1.6 \
   --icon ./RARS.icns \
   --mac-package-identifier "RARS" \
